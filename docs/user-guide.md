@@ -61,6 +61,71 @@ Best for: Cursor, Claude Code, Windsurf, VS Code users
 npx bmad-method install
 ```
 
+#### Option 3: Custom BMAD Method with UI Iterator (5 minutes)
+
+**Best for: Users who want the enhanced UI iteration capabilities**
+
+This custom version includes the **Aria - Parallel UI Iterator** agent for creating 5 UI variations simultaneously!
+
+**Installation from Custom Repository:**
+
+```bash
+# Clone the custom bmad-method with UI iterator
+git clone https://github.com/menidi/my-bmad-method.git
+cd my-bmad-method
+
+# Install to your project
+node tools/installer/bin/bmad.js install
+```
+
+**What You Get Extra:**
+
+✨ **UI Iterator Agent (Aria)** - Parallel UI iteration specialist
+
+- Creates 5 UI variations simultaneously (Minimal, Modern, Dense, Playful, Accessible)
+- Uses git worktrees for parallel development
+- ~30 minute workflow for complete UI exploration
+- Commands: `*parallel-ui`, `*compare`, `*select`, `*refine`, `*combine`
+
+**Available Agents in Custom Version:**
+
+```bash
+# List all available agents (including UI iterator)
+node tools/installer/bin/bmad.js list
+```
+
+**Agent Options:**
+
+- `ui-iterator` - Parallel UI iteration specialist ✨ **NEW**
+- `analyst` - Business Analyst
+- `pm` - Product Manager
+- `architect` - Solution Architect
+- `dev` - Developer
+- `qa` - QA Specialist
+- `ux-expert` - UX Designer
+- `po` - Product Owner
+- `sm` - Scrum Master
+- `bmad-orchestrator` - Team Coordinator
+- `bmad-master` - Universal Expert
+
+**Interactive Installation:**
+
+The installer will prompt you for:
+
+- **Project directory** (where to install bmad)
+- **Agent/team selection** (including the new UI iterator)
+- **IDE configuration** (Cursor, Claude Code, Windsurf, etc.)
+
+**Quick Usage:**
+
+```bash
+# In your IDE after installation
+@ui-iterator Start parallel UI iteration for login page
+*parallel-ui  # Creates 5 UI variations simultaneously
+*compare     # Compare variations side by side
+*select      # Choose best elements from each
+```
+
 ### First Steps
 
 1. **Choose Your Environment**: Web UI or IDE
@@ -72,16 +137,17 @@ npx bmad-method install
 
 ### Core Development Team
 
-| Agent       | Role               | Primary Functions                       | When to Use                            |
-| ----------- | ------------------ | --------------------------------------- | -------------------------------------- |
-| `analyst`   | Business Analyst   | Market research, requirements gathering | Project planning, competitive analysis |
-| `pm`        | Product Manager    | PRD creation, feature prioritization    | Strategic planning, roadmaps           |
-| `architect` | Solution Architect | System design, technical architecture   | Complex systems, scalability planning  |
-| `dev`       | Developer          | Code implementation, debugging          | All development tasks                  |
-| `qa`        | QA Specialist      | Test planning, quality assurance        | Testing strategies, bug validation     |
-| `ux-expert` | UX Designer        | UI/UX design, prototypes                | User experience, interface design      |
-| `po`        | Product Owner      | Backlog management, story validation    | Story refinement, acceptance criteria  |
-| `sm`        | Scrum Master       | Sprint planning, story creation         | Project management, workflow           |
+| Agent         | Role                    | Primary Functions                       | When to Use                            |
+| ------------- | ----------------------- | --------------------------------------- | -------------------------------------- |
+| `analyst`     | Business Analyst        | Market research, requirements gathering | Project planning, competitive analysis |
+| `pm`          | Product Manager         | PRD creation, feature prioritization    | Strategic planning, roadmaps           |
+| `architect`   | Solution Architect      | System design, technical architecture   | Complex systems, scalability planning  |
+| `dev`         | Developer               | Code implementation, debugging          | All development tasks                  |
+| `qa`          | QA Specialist           | Test planning, quality assurance        | Testing strategies, bug validation     |
+| `ux-expert`   | UX Designer             | UI/UX design, prototypes                | User experience, interface design      |
+| `ui-iterator` | UI Iteration Specialist | Parallel UI variations, comparison      | Multiple UI concepts, rapid iteration  |
+| `po`          | Product Owner           | Backlog management, story validation    | Story refinement, acceptance criteria  |
+| `sm`          | Scrum Master            | Sprint planning, story creation         | Project management, workflow           |
 
 ### Meta Agents
 

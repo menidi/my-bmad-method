@@ -45,6 +45,20 @@ agent-dependencies:
     - bmad-core/templates/test-plan-tmpl.md
   ux-expert:
     - bmad-core/templates/ux-tmpl.md
+  ui-iterator:
+    - bmad-core/tasks/create-next-story.md
+    - bmad-core/tasks/generate-ai-frontend-prompt.md
+    - bmad-core/tasks/create-deep-research-prompt.md
+    - bmad-core/tasks/create-doc.md
+    - bmad-core/tasks/execute-checklist.md
+    - bmad-core/templates/story-tmpl.md
+    - bmad-core/templates/front-end-spec-tmpl.md
+    - bmad-core/templates/front-end-architecture-tmpl.md
+    - bmad-core/checklists/story-dod-checklist.md
+    - bmad-core/data/technical-preferences.md
+    - bmad-core/data/bmad-kb.md
+    - bmad-core/utils/template-format.md
+    - bmad-core/utils/workflow-management.md
   bmad-master:
     - bmad-core/templates/*.md
     - bmad-core/tasks/*.md
@@ -129,6 +143,10 @@ available-agents:
     name: UX Expert
     file: bmad-core/agents/ux-expert.md
     description: User experience design
+  - id: ui-iterator
+    name: UI Iterator (Aria)
+    file: bmad-core/agents/ui-iterator.md
+    description: Parallel UI iteration specialist
   - id: bmad-master
     name: BMAD Master
     file: bmad-core/agents/bmad-master.md
